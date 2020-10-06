@@ -1,0 +1,6 @@
+# canary
+<script>
+(function () {
+  console.log('access');
+})();
+</script>
