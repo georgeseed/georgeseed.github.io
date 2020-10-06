@@ -1,7 +1,8 @@
 <html>
+Test
 <script>
 (function () {
-  console.log('access');
+  console.log('Test');
 })();
 </script>
 </html>
