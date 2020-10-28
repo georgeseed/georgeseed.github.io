@@ -1,6 +1,25 @@
-<script> (function () {
-  console.log('apples')
-  var x = "Hello!!";  // I will invoke myself
-  })();
-var y = Math.random()
+<form id="test-form">
+  
+  <div>
+    <label>Field 1</label>
+    <input type="text" name="name" placeholder="name"/>
+  </div>
+
+</form>
+
+<script>
+  var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbzJVn_EjvcdOnOl6-cO6MxH4brNFuhSsQTjpSG8qBVt1zzZmmg/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
 </script>
