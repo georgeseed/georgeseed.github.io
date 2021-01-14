@@ -8,15 +8,33 @@
     <h1 style="color:white;">Test Page</h1>
     </header>
   
-  <div style="width:970px;margin:0 auto;">
-  <iframe src="https://studio.cav.ai/converse/iframe?hash=1599139701040-1599123780730-1589742735692-1585910396716-1585899077366-1582187308740-1579011704578-1578311946369-3c1cf01b3d34b32eda0101414dabcd84" name="cavai-iframe" width="100%" height="180" style="min-width:100%;" scrolling="no" frameborder="0" onload="this.contentWindow.postMessage({
-          url: 'https://studio.cav.ai/js/converse-iframe-init.js',
-          origin: window.origin,
-          clickthroughUrl: 'https://ad.doubleclick.net/ddm/trackclk/N1009011.3276937MPLATFORMDK-PROG/B23648452.274226119;dc_trk_aid=468546457;dc_trk_cid=132788829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=',
-          clickMacro: '${CLICK_URL}'
-        },'https://studio.cav.ai');"></iframe>
-</div>
-  
+<script>
+/*
+    READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
+    1. THIS IS AN CHATBOX TAG AND IS TO BE USED ONLY IN CHATBOX PLACEMENT.
+    2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
+    */
+    // Converse ID 8-904-1219-5732 generated 2021-01-14T12:39:47.122Z
+    (function() {
+        function async_load(target){
+            var s = target.document.createElement('script');
+            s.type = 'text/javascript';
+            s.id = 'cavai-script';
+            var theUrl = 'https://cloud.cavai.com/js/converses/widgets/converse-widget.1610627885285-1603813321514-3130e973ba9911a068ad01bb44be0382.min.js?bust=' + Date.now();
+            s.src = theUrl;
+            s.async = true;
+            
+            s.dataset.clickMacro = 'MACRO_PLACEHOLDER';
+
+            target.document.body.appendChild(s);
+        }
+        try {
+          async_load(window.top)
+        } catch (error) {
+          async_load(window)
+        }
+    })();
+</script>
   
   </body>
 </html>
