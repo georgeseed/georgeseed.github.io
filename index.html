@@ -7,33 +7,24 @@
   <body style="background-color:black;">
     <h1 style="color:white;">Test Page</h1>
     </header>
-<script>
-/*
+
+  <script>
+    /*
     READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
-    1. THIS IS AN CHATBOX TAG AND IS TO BE USED ONLY IN CHATBOX PLACEMENT.
+    1. THIS IS A SAFEFRAME TAG AND MUST BE PLACED IN A *SAFEFRAME*.
     2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
     */
-    // Converse ID 8-904-1219-4391 generated 2021-01-14T12:37:28.142Z
-    (function() {
-        function async_load(target){
-            var s = target.document.createElement('script');
-            s.type = 'text/javascript';
-            s.id = 'cavai-script';
-            var theUrl = 'https://cloud.cavai.com/js/converses/widgets/converse-widget.1603813321514-3130e973ba9911a068ad01bb44be0382.min.js?bust=' + Date.now();
-            s.src = theUrl;
-            s.async = true;
-            
-            s.dataset.clickMacro = 'MACRO_PLACEHOLDER';
+    // 8-904-1219-4390 generated 2021-01-22T09:13:47.395Z
+    document.write('<div id="chatbox-frame"></div>');
+    function load_chatbox() {
+        const theUrl = 'https://cloud.cavai.com/js/converses/widgets/converse-widget.3130e973ba9911a068ad01bb44be0382.min.js?bust=' + Date.now();
+        const clickthroughtAttr = ''
+        document.write('<scr' + 'ipt src="' + theUrl + '"' + clickthroughtAttr + ' ' + 'data-clickMacro="MACRO_PLACEHOLDER"></sc' + '' + 'ript>');
+    };
+    load_chatbox();
+    document.write('');
+  </script>
 
-            target.document.body.appendChild(s);
-        }
-        try {
-          async_load(window.top)
-        } catch (error) {
-          async_load(window)
-        }
-    })();
-</script>
 
   </body>
 </html>
