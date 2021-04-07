@@ -7,16 +7,39 @@
   <body style="background-color:black;">
     <h1 style="color:white;">Test Page</h1>
     </header>
-<div style="width:300px;margin:0 auto;">
-<!--
-READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
-1. THIS IS AN INLINE TAG AND IS TO BE USED ONLY IN BANNER PLACEMENTS.
-2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
--->
-<!-- Converse ID 116-1165-1556-6019 generated 2021-03-11T15:51:27.232Z -->
-  <iframe src="https://cloud.cavai.com/api/converse/iframe?hash=1c24b82717adb1a20017218692320450" name="cavai-iframe" width="300" height="600" style="min-width:100%;" scrolling="no" frameborder="0"></iframe>
-  <script src="https://cloud.cavai.com/js/converse-iframe-init.js" data-clickthrough-url="https://ad.doubleclick.net/ddm/trackclk/N1239562.3198572XAXISPREMIUMPROP/B25574994.298063056;dc_trk_aid=491211364;dc_trk_cid=147461650;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=" data-click-macro="MACRO_PLACEHOLDER"></script>
-</div><img src="https://ad.doubleclick.net/ddm/trackimp/N1239562.3198572XAXISPREMIUMPROP/B25574994.298063056;dc_trk_aid=491211364;dc_trk_cid=147461650;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" width="1" height="1">
+  
+<div class="celtra-ad-v3">
+    <!-- eas.JHtDUkVBVElWRV9JRH0%3D = raw       ${CREATIVE_ID} -->
+    <!-- externalCreativeId         = raw       ${CREATIVE_ID} -->
+    <!-- externalPlacementId        = raw       ${CPG_ID} -->
+    <!-- externalSiteId             = raw       ${SITE_ID} -->
+    <!-- externalSiteName           = urldecode ${REFERER_URL_ENC} -->
+    <!-- externalSupplierId         = raw       ${PUBLISHER_ID} -->
+    <!-- externalCampaignId         = raw       ${CP_ID} -->
+    <!-- externalSessionId          = raw       ${AUCTION_ID} -->
+    <!-- externalCreativeSize       = raw       ${WIDTH}x${HEIGHT} -->
+    <img src="data:image/png,celtra" style="display: none" onerror="
+        (function(img) {
+            var params = {'clickUrl':'${CLICK_URL}','expandDirection':'undefined','preferredClickThroughWindow':'new','textColor':'#FFFFFF','barColor':'#000000','advertisementMessage':'Advertisement','scrollMessage':'Scroll to continue with content','useFullWidth':'1','clickEvent':'advertiser','iosAdvId':'${DEVICE_APPLE_IDA}','androidAdvId':'${DEVICE_AAID}','externalAdServer':'AppNexus','tagVersion':'html-standard-7'};
+            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
+            var req = document.createElement('script');
+            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+            params.clientTimestamp = new Date/1000;
+            params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
+            params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
+            var qs = '';
+            for (var k in params) {
+                qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+            }
+            var src = 'https://ads.celtra.com/eb5b9230/web.js?' + qs;
+            req.src = src;
+            img.parentNode.insertBefore(req, img.nextSibling);
+        })(this);
+    "/>
+  <iframe src="https://cloud.cavai.com/api/converse/iframe?hash=1617018242498-1617017987060-1603813413774-1603813342330-1603813321514-3130e973ba9911a068ad01bb44be0382" name="cavai-iframe" width="300" height="250" style="min-width:100%;" scrolling="no" frameborder="0"></iframe>
+  <script src="https://cloud.cavai.com/js/converse-iframe-init.js" data-click-macro="MACRO_PLACEHOLDER"></script>
+  </div>
 
+  </div>
   </body>
 </html>
