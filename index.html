@@ -8,16 +8,35 @@
     <h1 style="color:white;">Test Page</h1>
     </header>
   <div> Test Test Test </div>
-<div style="width:970px;margin:0 auto;">
-<!--
-READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
-1. THIS IS AN INLINE TAG AND IS TO BE USED ONLY IN BANNER PLACEMENTS.
-2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
--->
-<!-- Converse ID 711-1335-1779-7977 generated 2021-04-23T10:14:01.994Z -->
-  <iframe src="https://cloud.cavai.com/api/converse/iframe?hash=1619172617327-1617187037722-d92d82abfdcc78b3ea98f65b08b363e5" name="cavai-iframe" width="970" height="250" style="min-width:100%;" scrolling="no" frameborder="0"></iframe>
-  <script src="https://cloud.cavai.com/js/converse-iframe-init.js" data-click-macro="MACRO_PLACEHOLDER"></script>
-</div>
+
+  <div class="celtra-ad-v3">
+    <!-- eas.JHtDUkVBVElWRV9JRH0%3D = raw       ${CREATIVE_ID} -->
+    <!-- externalCreativeId         = raw       ${CREATIVE_ID} -->
+    <!-- externalPlacementId        = raw       ${CPG_ID} -->
+    <!-- externalSiteId             = raw       ${SITE_ID} -->
+    <!-- externalSiteName           = urldecode ${REFERER_URL_ENC} -->
+    <!-- externalSupplierId         = raw       ${PUBLISHER_ID} -->
+    <!-- externalCampaignId         = raw       ${CP_ID} -->
+    <!-- externalSessionId          = raw       ${AUCTION_ID} -->
+    <!-- externalCreativeSize       = raw       ${WIDTH}x${HEIGHT} -->
+    <img src="data:image/png,celtra" style="display: none" onerror="
+        (function(img) {
+            var params = {'clickUrl':'${CLICK_URL}','expandDirection':'undefined','clickEvent':'advertiser','iosAdvId':'${DEVICE_APPLE_IDA}','androidAdvId':'${DEVICE_AAID}','externalAdServer':'AppNexus','tagVersion':'html-standard-7'};
+            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
+            var req = document.createElement('script');
+            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+            params.clientTimestamp = new Date/1000;
+            params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
+            params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
+            var qs = '';
+            for (var k in params) {
+                qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+            }
+            var src = 'https://ads.celtra.com/b2c37b30/web.js?' + qs;
+            req.src = src;
+            img.parentNode.insertBefore(req, img.nextSibling);
+        })(this);
+    "/>
 </div>
   
   <div> TEST TEST </div>
