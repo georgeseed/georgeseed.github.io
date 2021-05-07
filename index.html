@@ -9,35 +9,41 @@
     </header>
   <div> Test Test Test </div>
 
-  <div class="celtra-ad-v3">
-    <!-- eas.JHtDUkVBVElWRV9JRH0%3D = raw       ${CREATIVE_ID} -->
-    <!-- externalCreativeId         = raw       ${CREATIVE_ID} -->
-    <!-- externalPlacementId        = raw       ${CPG_ID} -->
-    <!-- externalSiteId             = raw       ${SITE_ID} -->
-    <!-- externalSiteName           = urldecode ${REFERER_URL_ENC} -->
-    <!-- externalSupplierId         = raw       ${PUBLISHER_ID} -->
-    <!-- externalCampaignId         = raw       ${CP_ID} -->
-    <!-- externalSessionId          = raw       ${AUCTION_ID} -->
-    <!-- externalCreativeSize       = raw       ${WIDTH}x${HEIGHT} -->
-    <img src="data:image/png,celtra" style="display: none" onerror="
-        (function(img) {
-            var params = {'clickUrl':'${CLICK_URL}','expandDirection':'undefined','clickEvent':'advertiser','iosAdvId':'${DEVICE_APPLE_IDA}','androidAdvId':'${DEVICE_AAID}','externalAdServer':'AppNexus','tagVersion':'html-standard-7'};
-            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
-            var req = document.createElement('script');
-            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
-            params.clientTimestamp = new Date/1000;
-            params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
-            params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
-            var qs = '';
-            for (var k in params) {
-                qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
-            }
-            var src = 'https://ads.celtra.com/b2c37b30/web.js?' + qs;
-            req.src = src;
-            img.parentNode.insertBefore(req, img.nextSibling);
-        })(this);
-    "/>
-</div>
+  <button type="button" id="myBtn">Click Me!</button>
+
+/*
+    READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
+    1. THIS IS AN CHATBOX TAG AND IS TO BE USED ONLY IN CHATBOX PLACEMENT.
+    2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
+    */
+    // Converse ID 91-178-134-431 generated 2021-03-29T13:38:44.301Z
+    (function() {
+        function async_load(target){
+            var s = target.document.createElement('script');
+            s.type = 'text/javascript';
+            s.id = 'cavai-script';
+            var theUrl = 'https://bannerboyz.cavai.com/js/converses/widgets/converse-widget.089cd4c67af73e8fdf103c8b4fe59c17.min.js?bust=' + Date.now();
+            s.src = theUrl;
+            s.async = true;
+
+            s.dataset.clickMacro = 'MACRO_PLACEHOLDER';
+            s.dataset.bubbleAppearance = 'custom'
+
+            target.document.body.appendChild(s);
+        }
+        try {
+          async_load(window.top)
+        } catch (error) {
+          async_load(window)
+        }
+    })();
+
+// CHANGE ME TO DESIRED BUTTON SELECTOR
+document.querySelector('#myBtn').addEventListener('click', function() {
+	const openBubble = new MouseEvent('click');
+	document.querySelector('.adbotic-chatbot-bubble-mob').dispatchEvent(openBubble);
+});
+
   
   <div> TEST TEST </div>
   </body>
