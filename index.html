@@ -10,41 +10,16 @@
   <div> Test Test Test </div>
 
   <button type="button" id="myBtn">Click Me!</button>
-<script>
-/*
-    READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
-    1. THIS IS AN CHATBOX TAG AND IS TO BE USED ONLY IN CHATBOX PLACEMENT.
-    2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
-    */
-    // Converse ID 91-178-134-431 generated 2021-03-29T13:38:44.301Z
-    (function() {
-        function async_load(target){
-            var s = target.document.createElement('script');
-            s.type = 'text/javascript';
-            s.id = 'cavai-script';
-            var theUrl = 'https://bannerboyz.cavai.com/js/converses/widgets/converse-widget.089cd4c67af73e8fdf103c8b4fe59c17.min.js?bust=' + Date.now();
-            s.src = theUrl;
-            s.async = true;
-
-            s.dataset.clickMacro = 'MACRO_PLACEHOLDER';
-            s.dataset.bubbleAppearance = 'custom'
-
-            target.document.body.appendChild(s);
-        }
-        try {
-          async_load(window.top)
-        } catch (error) {
-          async_load(window)
-        }
-    })();
-
-// CHANGE ME TO DESIRED BUTTON SELECTOR
-document.querySelector('#myBtn').addEventListener('click', function() {
-	const openBubble = new MouseEvent('click');
-	document.querySelector('.adbotic-chatbot-bubble-mob').dispatchEvent(openBubble);
-});
-
-  </script>
-  <div> TEST TEST </div>
+<div style="width:330px;margin:0 auto;">
+<!--
+READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
+1. THIS IS AN INLINE TAG AND IS TO BE USED ONLY IN BANNER PLACEMENTS.
+2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
+-->
+<!-- Converse ID 8-904-1219-8900 generated 2021-05-20T09:01:33.107Z -->
+  <iframe src="https://cloud.cavai.com/api/converse/iframe?hash=83a2350db18dceb25e7e10977cef730b" name="cavai-iframe" width="330" height="450" style="min-width:100%;" scrolling="no" frameborder="0"></iframe>
+  <script src="https://cloud.cavai.com/js/converse-iframe-init.js" data-click-macro="MACRO_PLACEHOLDER"></script>
+</div>
+	<div> TEST TEST </div>
   </body>
 </html>
