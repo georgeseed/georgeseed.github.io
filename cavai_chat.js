@@ -1,5 +1,4 @@
-<script>
-	//the cavai script should be included in any creative that needs conversational
+//the cavai script should be included in any creative that needs conversational
     (function() {
         function async_load(target){
             var s = target.document.createElement('script');
@@ -20,4 +19,3 @@
           async_load(window)
         }
     })();
-</script>
