@@ -56,13 +56,16 @@
 </script><img src="https://cookie.norstatsurveys.com/api/trackingpixel/39fbc3c33320f3975862a621a2f6cac8/{Bubble_exposed}" width="1" height="1">
 
 <script>
+setTimeout(function() {
 window.addStyle = (css) => {
 const style = document.createElement('style');
 style.innerHTML = css;
 document.head.appendChild(style);
 };
-addStyle('.adbotic-chatbot-bubble-title-mob{height: 100px !important; background-size:contain !important;}');
-</script>
+addStyle('.adbotic-chatbot-bubble-title-mob{height: 100px !important; background-size:contain !important;}'
+	);
+}, 2000)
+	</script>
 
 
 	<div> TEST TEST </div>
