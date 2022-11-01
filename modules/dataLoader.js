@@ -11,4 +11,4 @@ async function fetchJSON(url, headers) {
     return data
 }
 
-export fetchJSON
+export { fetchJSON };
