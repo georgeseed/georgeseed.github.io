@@ -36,6 +36,7 @@
 <button onclick="myFunction()">Try it</button>
 
 <script>
+
 async function fetchJSON(url, headers) {
   //await keyword - call this function and expect a promise in return. Fetch returns a promise object that contains methods
   //from the Response object (delegates, in Class terms, it's a constructor)
@@ -68,7 +69,8 @@ var data_obj = {
 
 var final_data = fetchJSON(request, my_headers)
     .then((data) => {
-      console.log(data)
+        var myJsonString = JSON.stringify(data);
+              console.log(myJsonString)
       data_obj.changeData(data) //call some data-container object with a handler method for updating it's data object
     })	
     .catch((err) => {
