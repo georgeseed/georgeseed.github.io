@@ -55,9 +55,22 @@ var my_headers = {
 'content-type': `application/json`
 }
 
-var myData = await fetchJSON(request, my_headers)
+var data_obj = {
+  changeData: function changeData(data){
+    this.my_data = data
+  },
+  my_data: {
+  }
+}
 
-console.log(myData)
+fetchJSON(request, my_headers)
+    .then((data) => {
+      console.log(data)
+      data_obj.changeData(data) //call some data-container object with a handler method for updating it's data object
+    })
+    .catch((err) => {
+      console.log("rejected", err);
+    });
 }
 </script>
 	<div> TEST TEST </div>
