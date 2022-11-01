@@ -68,13 +68,11 @@ var data_obj = {
 
 fetchJSON(request, my_headers)
     .then((data) => {
-    //  console.log(data)
+      console.log(data)
       data_obj.changeData(data) //call some data-container object with a handler method for updating it's data object
-    })
-	console.log(data)
-const final_obj = JSON.parse(data);
+	const final_obj = JSON.parse(data);
 	console.log(final_obj)
-	
+    })	
     .catch((err) => {
       console.log("rejected", err);
     });
