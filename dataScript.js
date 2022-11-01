@@ -11,7 +11,7 @@ async function fetchJSON(url, headers) {
     return data
 }
 
-function myFunction() {
+async function myFunction() {
 var auth = document.getElementById('auth').value;
 var request = document.getElementById('request').value;
 
