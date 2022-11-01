@@ -10,3 +10,5 @@ async function fetchJSON(url, headers) {
     let data = await response.json();
     return data
 }
+
+export fetchJSON
