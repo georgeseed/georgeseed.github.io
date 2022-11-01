@@ -24,10 +24,31 @@
     <h1 style="color:white;">Test Page</h1>
     </header>
   <div> Test Test Test </div>
-<script>
-import fetchJSON from "./dataLoader.js";
+<h2>Input Data Config</h2>
 
-</script>	
+<form id="frm1">
+  Auth Token: <input type="text" id='auth' name="auth" ><br>
+  Request URL: <input type="text" id='request' name="request" ><br><br>
+</form> 
+<button onclick="myFunction()">Try it</button>
+
+<script>
+	import fetchJSON from "./dataLoader.js";
+	
+function myFunction() {
+var auth = document.getElementById('auth').value;
+var request = document.getElementById('request').value;
+
+var my_headers = {
+'authorization': header,
+'content-type': `application/json`
+}
+
+var myData = await fetchJSON(request, my_headers)
+
+return myData
+}
+</script>
 	<div> TEST TEST </div>
   </body>
 </html>
