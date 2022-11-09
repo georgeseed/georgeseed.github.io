@@ -25,59 +25,41 @@
     <h1 style="color:white;">Test Page</h1>
     </header>
   <div> Test Test Test </div>
-<canvas id="myChart" width="800" height="400"></canvas>
 
-	<h2>Input Data Config</h2>
+	<script>
+/*
+    READ THE BELOW CAREFULLY AND DO NOT REMOVE IT BEFORE FINAL TAG PLACEMENT
+    1. THIS IS AN CHATBOX TAG AND IS TO BE USED ONLY IN CHATBOX PLACEMENT.
+    2. DO NOT MAKE ANY CHANGES TO THE CONTENTS OF THIS TAG. IT WILL STOP WORKING.
+    */
+    // Converse ID 1136-2166-3123-17736 generated 2022-05-05T11:14:49.567Z
+    (function() {
+        function async_load(target){
+            var s = target.document.createElement('script');
+            s.type = 'text/javascript';
+            s.id = 'cavai-script';
+            var theUrl = 'https://cloud.cavai.com/js/converses/widgets/converse-widget.1649321672899-1647275117569-1646738541274-1644832788811-1644831802148-1643976079792-bc635a0a8c85ea068ac47b4784dbf614.min.js?bust=' + Date.now();
+            s.src = theUrl;
+            s.async = true;
+            
+            s.dataset.clickMacro = 'MACRO_PLACEHOLDER';
+            s.dataset.bubbleAppearance = 'custom'
 
-<form id="frm1">
-  Auth Token: <input type="text" id='auth' name="auth" ><br>
-  Request URL: <input type="text" id='request' name="request" ><br><br>
-</form> 
-<button onclick="myFunction()">Try it</button>
-
-<script>
-
-async function fetchJSON(url, headers) {
-  //await keyword - call this function and expect a promise in return. Fetch returns a promise object that contains methods
-  //from the Response object (delegates, in Class terms, it's a constructor)
-    let response = await fetch(url,
-      {
-      headers: headers
-      });
-  //data = the result of the fetch() function, which here I've called 'response' and is
-  // a promise with some special methods for reading it from the Response object like .json() or .text()
-    let data = await response.json();
-    return data
-}
-
-async function myFunction() {
-var auth = document.getElementById('auth').value;
-var request = document.getElementById('request').value;
-
-var my_headers = {
-'authorization': auth,
-'content-type': `application/json`
-}
-
-var data_obj = {
-  changeData: function changeData(data){
-    this.my_data = data
-  },
-  my_data: {
-  }
-}
-
-var final_data = fetchJSON(request, my_headers)
-    .then((data) => {
-        var myJsonString = JSON.stringify(data);
-              console.log(myJsonString)
-      data_obj.changeData(data) //call some data-container object with a handler method for updating it's data object
-    })	
-    .catch((err) => {
-      console.log("rejected", err);
-    });
-}
+            target.document.body.appendChild(s);
+        }
+        try {
+          async_load(window.top)
+        } catch (error) {
+          async_load(window)
+        }
+    })();
+    
+document.querySelector('#  ').addEventListener('click', function() {
+	const openBubble = new MouseEvent('click');
+	document.querySelector('.adbotic-chatbot-bubble-mob').dispatchEvent(openBubble);
+});
 </script>
+
 	<div> TEST TEST </div>
   </body>
 </html>
