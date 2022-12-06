@@ -25,10 +25,9 @@
   <body>
     <h1 style="color:white;">Test Page</h1>
     </header>
-  <div> Test Test Test </div>
+	<button type="button" id="btn">Generate Invoice</button>
 <div id="p1">
 	</div>
-
 <script>
 
 async function fetchJSON(url, headers, body) {
@@ -136,12 +135,9 @@ var myDeal = {
   type:xaxisDeal,
 }
 
-	
-</script>
-	
-	<button type="button" onclick="cavai_manager.handleInvoiceRequest(myDeal)">Generate Invoice</button>
+document.getElementById("btn").addEventListener ("click", cavai_manager.handleInvoiceRequest(myDeal), false);
 
-	
-<div> TEST TEST </div>
+</script>
+
   </body>
 </html>
