@@ -1,44 +1,31 @@
-# Title: Cavai Support Team Onboarding Guide
+# Cavai Support Team Guide: Troubleshooting JavaScript & CSS Ad Tag Issues
 
-## Introduction:
-Welcome to the Cavai Support Team! This guide will provide you with an overview of the steps we take at Cavai to solve support issues, particularly focusing on troubleshooting JavaScript (JS) tag issues. We will use real-life examples to illustrate the process, helping you gain a clear understanding of how we address and resolve problems.
+Welcome to the Cavai Support Team! This guide will help you better understand the steps we take to solve support issues, specifically related to JavaScript and CSS ad tags on publisher websites or through a DSP. As a member of the support team, your main goal is to ensure our users have a seamless experience with our platform.
 
-## Step 1: Understand the issue
-The first step in solving any support issue is to understand the problem. This involves reading the description provided by the user, and sometimes asking clarifying questions to gather more information.
+## Table of Contents
 
-**Example Issue:**
-"We received a live preview from publisher where our tag, wrapped in Adform tag, is not displaying."
+1. Introduction to JavaScript & CSS
+2. Common JavaScript & CSS Errors
+3. Troubleshooting Process
+4. Best Practices and Tips
 
-## Step 2: Review relevant details
-Carefully examine the provided details, such as:
+## 1. Introduction to JavaScript & CSS
 
-- Deadline
-- Affected campaigns
-- Affected countries
-- Creatives involved
-- Key stakeholders
+### JavaScript
+JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language used to create interactive and dynamic content on websites. It allows for user interactions, manipulation of the Document Object Model (DOM), and communication with back-end servers.
 
-## Step 3: Investigate the problem
-After understanding the issue, start investigating the problem. This may involve:
+### CSS
+Cascading Style Sheets (CSS) is a stylesheet language that is used to control the presentation of HTML elements on a web page. It allows you to apply styles (color, fonts, layout, etc.) to web documents.
 
-- Testing the user's creative(s) or tag(s)
-- Checking for compatibility with different DSPs (e.g., Adform, Yahoo, Amazon)
-- Identifying potential errors in the implementation
+## 2. Common JavaScript & CSS Errors
 
-### Understanding JavaScript and common errors
-JavaScript is a programming language used primarily for web development to add interactivity and functionality to websites. Common typos and errors include:
+### JavaScript Errors
+Some common JavaScript errors include:
 
-- Misspelled or undeclared variables
-- Missing or mismatched braces, brackets, or parentheses
-- Incorrect use of operators or assignment
-- Syntax errors
-
-For JS tag issues, pay special attention to:
-
-- Errors in the browser console
-- Incorrect tag implementation
-- Conflicts with other scripts on the page
-- Network or server issues
+1. **Syntax errors:** Missing semicolons, unmatched parentheses, or incorrect capitalization.
+2. **Type Errors:** Occur when an operation is performed on an incompatible data type, such as trying to access a property on an undefined variable.
+3. **Reference Errors:** Occur when a variable or function is used before it is defined.
+4. **Range Errors:** Occur when a value is outside of the expected range, such as an array index out of bounds.
 
 ### Common console log errors and their meanings
 When troubleshooting JavaScript, it's important to look at the browser console for error messages. Some common console log errors include:
@@ -47,24 +34,46 @@ When troubleshooting JavaScript, it's important to look at the browser console f
 - `TypeError`: Occurs when a value is not of the expected type
 - `SyntaxError`: Indicates a problem with the script's syntax, such as a missing brace
 
-### Testing tags
+### CSS Issues
+Some common CSS issues include:
+
+1. **Selector specificity:** When multiple rules target the same element, the most specific rule takes precedence.
+2. **Inheritance:** Some CSS properties are inherited from parent elements, while others are not.
+3. **Cascading order:** The order in which CSS rules are applied can affect the final appearance of an element.
+4. **Browser compatibility:** Some CSS properties or values may not be supported by all browsers.
+
+## 3. Troubleshooting Process
+
+Follow these steps to troubleshoot JavaScript and CSS ad tag issues:
+
+### Step 1: Gather Information
+
+The first step in solving any support issue is to understand the problem. This involves reading the description provided by the user, and sometimes asking clarifying questions to gather more information.
+
+Collect all relevant information about the issue, including:
+
+- Deadline
+- Affected campaigns
+- Countries affected
+- Creatives involved
+- Key stakeholders
+- Issue description and screenshots
+
+### Step 2: Replicate the Issue
+Try to replicate the issue using the provided information. Test the ad tag on different browsers, devices, and environments to determine if the issue is consistent or specific to a particular context.
+
 There are various platforms where you can test tags, including:
 
 - [test-a-tag.com](http://www.test-a-tag.com/): An online platform for testing ad tags
 - Localhost: You can also test tags locally by creating a simple HTML file and embedding the tag code
 
-## Step 4: Communicate and collaborate with the team
-Leverage the expertise of your teammates while keeping the user informed throughout the process. This may involve discussing the issue in a group setting, assigning specific tasks to individual team members, or providing progress updates to the user.
+### Step 3: Identify the Cause
+Analyze the JavaScript and CSS code to identify the cause of the issue. This might involve:
 
-## Step 5: Develop a solution
-Once the root cause is identified, work on developing a solution. This may involve implementing new features, fixing bugs, or suggesting alternative approaches.
-
-For JS tag issues, some common solutions may include:
-
-- Correcting errors in the tag implementation
-- Modifying the tag to ensure compatibility with the publisher's site
-- Resolving conflicts with other scripts on the page
-- Addressing network or server issues
+- Checking for syntax errors
+- Identifying incorrect or missing references
+- Investigating browser compatibility issues
+- Examining CSS specificity, inheritance, and cascading order
 
 ### CSS vs JS issues
 It's important to differentiate between CSS and JS issues:
@@ -72,14 +81,37 @@ It's important to differentiate between CSS and JS issues:
 - CSS issues: Problems related to the visual appearance, layout, or styling of elements on the page
 - JS issues: Problems related to the functionality, interactivity, or logic of the web page
 
-## Step 6: Test the solution
-Before implementing the solution, test it thoroughly to ensure it addresses the issue and doesn't introduce new problems.
+### Step 4: Test Fixes
+Implement potential fixes for the identified issue and test them to ensure they resolve the problem without introducing new issues. This might involve:
 
-## Step 7: Implement and close the issue
-After successfully testing the solution, implement it and inform the user about the resolution. Close the issue once it has been confirmed as resolved.
+- Correcting JavaScript syntax errors
+- Fixing CSS selector specificity conflicts
+- Updating CSS properties for better browser compatibility
+- Testing the ad tag in various contexts
 
-## Step 8: Document the resolution
-Finally, document the issue, its resolution, and any important learnings for future reference. This helps improve the knowledge base and streamlines the process of solving similar issues in the future.
+### Step 5: Communicate with Stakeholders
+Keep stakeholders informed throughout the troubleshooting process. Provide updates on the issue's status, potential fixes, and any additional information or assistance required.
 
-## Conclusion
-By following these steps, you'll be well-equipped to handle support issues at Cavai. Remember that collaboration and communication are key, as they ensure you can leverage the expertise of the entire team to provide the best possible solutions to our users. Stay up-to-date with the latest developments in JavaScript, as well as any changes to the Cavai platform, to ensure you're always prepared to tackle any issue that arises. Good luck, and welcome to the Cavai Support Team!
+### Step 6: Implement the Solution
+Once a fix has been identified and tested, implement the solution and verify that the issue is resolved. Ensure that the fix does not negatively impact other aspects
+
+of the ad or introduce new issues.
+
+### Step 7: Document the Issue and Resolution
+Document the issue, its cause, and the implemented solution for future reference. This information can be helpful for the support team when encountering similar issues in the future.
+
+## 4. Best Practices and Tips
+
+To make your troubleshooting process more efficient, consider the following best practices and tips:
+
+1. **Familiarize yourself with browser developer tools:** Browser developer tools, such as Chrome DevTools or Firefox Developer Tools, can help you debug JavaScript and CSS issues more effectively. They provide features like console log, DOM inspector, and network monitor, which are essential for diagnosing problems.
+
+2. **Write clear and concise code:** Writing clean, well-structured, and commented code makes it easier for you and others to understand the code, which in turn makes troubleshooting more efficient.
+
+3. **Test across multiple browsers and devices:** Testing your ad tags on different browsers, devices, and operating systems helps you identify potential compatibility issues early on and ensures a consistent user experience.
+
+4. **Keep up to date with industry standards and best practices:** Continually learning about the latest web development techniques, tools, and standards can help you more effectively troubleshoot and resolve issues.
+
+5. **Collaborate with your team:** When dealing with complex issues, collaborating with your team members can lead to faster and more effective solutions. Sharing knowledge and experience can also help improve the overall skills of the support team.
+
+By following these best practices and tips, you will become a more effective member of the Cavai Support Team, able to tackle a wide range of JavaScript and CSS ad tag issues on publisher websites or through a DSP. Remember, your primary goal is to ensure a smooth and seamless experience for our users, and with the right skills and knowledge, you can make a significant impact. Good luck!
