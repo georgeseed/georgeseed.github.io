@@ -220,4 +220,48 @@ endcomponent
 
 This documentation provides an overview of the main features of the pseudocode language for Svelte components. Use this guide to create components and understand their structure, behavior, and appearance without needing in-depth knowledge of Svelte.
 
+## Further Examples
 
+```
+// Pseudocode Language for Svelte Components
+
+// Component Declaration
+component MyComponent:
+
+  // Properties
+  property text: String
+  property color: String = "blue"
+
+  // State
+  state count: Number = 0
+
+  // Reactive Statements
+  reactive:
+    if count >= 10:
+      color = "red"
+
+  // Lifecycle Methods
+  onMount:
+    print("Component mounted")
+
+  onDestroy:
+    print("Component destroyed")
+
+  // Methods
+  method incrementCount:
+    count += 1
+
+  // Event Handling
+  onClickIncrement:
+    incrementCount()
+
+  // HTML Template
+  template:
+    <div style="color: {color};">
+      <p>{text}</p>
+      <p>Count: {count}</p>
+      <button on:click="onClickIncrement">Increment Count</button>
+    </div>
+
+endcomponent
+```
