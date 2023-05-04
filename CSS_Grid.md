@@ -23,7 +23,7 @@ endGridContainer
 Grid properties define the layout and appearance of the grid container. Set grid properties within the `gridContainer` block. The following properties can be used:
 
 - `display`: Sets the display type of the container. Use `grid` for grid layouts.
-- `gridTemplateColumns`: Defines the size and number of columns in the grid.
+- `gridTemplateColumns`: Defines the size and number of columns in the grid. e.g. repeat(number of columns/rows, the column width we want);
 - `gridTemplateRows`: Defines the size and number of rows in the grid.
 - `gridGap`: Sets the space between grid items.
 - `justifyContent`: Aligns grid items along the horizontal axis.
